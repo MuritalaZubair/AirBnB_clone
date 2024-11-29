@@ -1,0 +1,38 @@
+section#filters {
+  background: #fff;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e04747;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}

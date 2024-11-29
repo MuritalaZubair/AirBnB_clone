@@ -1,0 +1,28 @@
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+.price {
+  color: #ff5a5f;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .places-container {
+    flex-direction: column;
+  }
+
+  .place {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirBnB Clone - Accessible</title>
+  <link rel="stylesheet" href="styles/103-common.css">
+  <link rel="stylesheet" href="styles/103-header.css">
+  <link rel="stylesheet" href="styles/103-footer.css">
+  <link rel="stylesheet" href="styles/103-filters.css">
+  <link rel="stylesheet" href="styles/103-places.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>AirBnB Clone</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#filters">Filters</a></li>
+        <li><a href="#places">Places</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="filters" aria-labelledby="filters-heading">
+    <h2 id="filters-heading">Filters</h2>
+    <form>
+      <label for="search-input">Search</label>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search by city, state, or amenity" aria-label="Search bar">
+        <button type="submit">Search</button>
+      </div>
+
+      <fieldset>
+        <legend>Filter by:</legend>
+        <label for="state-select">States</label>
+        <select id="state-select">
+          <option>Lagos</option>
+          <option>Port Harcourt</option>
+        </select>
+
+        <label for="amenities-select">Amenities</label>
+        <select id="amenities-select">
+          <option>Wifi</option>
+          <option>TV</option>
+          <option>Pet friendly</option>
+        </select>
+      </fieldset>
+    </form>
+  </section>
+
+  <section id="places" aria-labelledby="places-heading">
+    <h2 id="places-heading">Places</h2>
+    <div class="places-container">
+      <article class="place" aria-labelledby="place-1-heading">
+        <h3 id="place-1-heading">My Home <span class="price" aria-label="Price: $80">$80</span></h3>
+        <ul>
+          <li>2 Guests</li>
+          <li>1 Bedroom</li>
+          <li>1 Bathroom</li>
+        </ul>
+        <p>Owner: John Lennon</p>
+        <p>This is a lovely 1 bedroom and 1 bathroom apartment that can accommodate 2 people.</p>
+      </article>
+      <article class="place" aria-labelledby="place-2-heading">
+        <h3 id="place-2-heading">Tiny House <span class="price" aria-label="Price: $65">$65</span></h3>
+        <ul>
+          <li>4 Guests</li>
+          <li>2 Bedrooms</li>
+          <li>1 Bathroom</li>
+        </ul>
+        <p>Owner: Adrienne</p>
+        <p>A cozy guest house located just minutes from French Quarters.</p>
+      </article>
+      <article class="place" aria-labelledby="place-3-heading">
+        <h3 id="place-3-heading">A Suite <span class="price" aria-label="Price: $190">$190</span></h3>
+        <ul>
+          <li>6 Guests</li>
+          <li>3 Bedrooms</li>
+          <li>2 Bathrooms</li>
+        </ul>
+        <p>Owner: Bill Zuckerberg</p>
+        <p>Spacious 2-bedroom suite with breathtaking views of North Shore mountains.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <p>&copy; 2024 AirBnB Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
